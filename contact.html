@@ -1,73 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <img src="jarditou_logo.jpg" alt="logo" width="300">
 </head>
+
 <body>
+
+    <header>
+        <img src="jarditou_logo.jpg" width="300" alt="jarditou_logo">
+    </header>
+
     <p>
         la qualité depuis 70 ans
     </p>
-<nav>
-<ul>
-<li> <a href="index.html">ACCEUIL</a></li>
-<li><a href="table.html">TABLEAU</a></li>
-<li><a href="#CONTACT">CONTACT</a></li>
-    </ul>
-</nav>
+    <nav>
+        <ul>
+            <li> <a href="index.html">ACCEUIL</a></li>
+            <li><a href="table.html">TABLEAU</a></li>
+            <li><a href="#CONTACT">CONTACT</a></li>
+        </ul>
+    </nav>
 
-    <img src="promotion.jpg" width="1900">
+    <img src="promotion.jpg" width="1900" alt="promo">
     <h3 id="CONTACT" style="text-align: center;">CONTACT</h3>
     <hr>
-    <p>* ces zones sont obligatoires</p>
-<forme>
-    <fieldset>
-        <legend>vos coordonnées</legend>
-        <label for="votre nom">Votre nom*:</label>
-        <input type="text" votre nom="nom" id="nom"><br>
-        <label for="votre prénom">Votre prenom*:</label>
-        <input type="texte" votre prénom="prénom" id="prenom"><br>
-        <label for="sexe">sexe*:</label>
-        <input type="radio" name="feminin" value="feminin"> feminin
-        <input type="radio" name="masculin" value="masculin"> masculin<br>
-        <label for="date">date de naisssance*:</label><input type="date" name="ddn" id="date"><br>
-        <label for="code postalecode ">Code postale*:</label><input type="code postale" ><br>
-        <label for="Adresse">Adresse:</label><input type="Adresse"><br>
-        <label for="ville">ville:</label><input type="ville"><br>
-        <label for="email">Email*:</label><input type="email"><br>
-    </fieldset>
-    <fieldset>
-        <legend>votre demande</legend>
-        <label for="suje">sujet*:</label>
-        <select id="sujet">
-            <option value="select" aria-placeholder="veuillez séléctionner un sujet">veuillez séléctionner un sujet</option><br>
+
+    <p>
+        * ces zones sont obligatoires
+    </p>
+
+    <form>
+        <fieldset>
+            <legend>vos coordonnées</legend>
+            <label for="nom" id="label-nom">Votre nom*:</label>
+            <input type="text" id="nom">Votre Nom
+            <br>
+            <label for="prenom">Votre prenom*:</label>
+            <input type="texte" name="prénom">votre prénom
+            <br>
+            <label for="sexe">sexe*:</label>
+            <input type="radio" name="feminin" value="feminin"> feminin
+            <input type="radio" name="masculin" value="masculin"> masculin
+            <br>
+            <label for="date">date de naisssance*:</label><input type="date" name="ddn" id="date">
+            <br>
+            <label for="number">Code postale*:</label><input type="code postale">
+            <br>
+            <label form="Adresse">Adresse:</label><input type="Adresse">
+            <br>
+            <label name="ville">ville:</label><input type="ville">
+            <br>
+            <label name="email">Email*:</label><input type="email">
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>votre demande</legend>
+            <label id="suje">sujet*:</label>
+            <select id="sujet">
+                <option value="select">veuillez séléctionner un sujet
+                </option><br>
             </select> <br>
-            <label for="votre question">Votre question*:</label>
-            <textarea id="votre question" name="votre question"></textarea>
-    </fieldset>
-    
+            <label>Votre question*:</label>
+            <textarea  name="votrequestion"></textarea>
+        </fieldset>
 
 
 
-</forme>
-<input type="checkbox" name="j'accepte" value="*j'accepte le traitement informatique de ce formulaire" checked>* j'accepte le traitement informatique de ce formulaire<br>
-<nav>
-    <ul>
-<button class="envoyer">envoyer</button>
-<button class="annuler">annuler</button>
-     </ul>
-</nav>
-<hr>
-<nav>
-    <ul>
-    
-<li><a href="#mention légale">MENTION LÉGALE</li></a>
-<li><a href="horair">HORAIRE</li></a>
-<li><a href="plan du site">PLAN DU SITE</li></a>
-</ul>
-</nav>
-    
+
+    </form>
+    <input type="checkbox" name="j'accepte" value="*j'accepte le traitement informatique de ce formulaire" checked>*
+    j'accepte le traitement informatique de ce formulaire<br>
+    <nav>
+
+        <button class="envoyer">envoyer</button>
+        <button class="annuler">annuler</button>
+<!--
+        <ul>
+        </ul>
+    -->
+    </nav>
+    <hr>
+    <nav>
+        <ul>
+
+            <li><a href="#mention_légale">MENTION LÉGALE</a></li>
+            <li><a href="horair">HORAIRE</a></li>
+            <li><a href="plan_du_site">PLAN DU SITE</a></li>
+        </ul>
+    </nav>
+
 </body>
+
 </html>
