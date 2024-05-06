@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
@@ -35,25 +37,34 @@
     <form>
         <fieldset>
             <legend>vos coordonnées</legend>
-            <label for="nom" id="label-nom">Votre nom*:</label>
-            <input type="text" id="nom">Votre Nom
+            <label for="nom">Votre nom*:</label>
+            <input type="text" name="nom" id="nom"> 
             <br>
-            <label for="prenom">Votre prenom*:</label>
-            <input type="texte" name="prénom">votre prénom
+
+            <label id="prenom">Votre prenom*:</label>
+            <input type="radio" name="prenom" value="prenom">votre prénom
             <br>
-            <label for="sexe">sexe*:</label>
-            <input type="radio" name="feminin" value="feminin"> feminin
-            <input type="radio" name="masculin" value="masculin"> masculin
+
+            <label id="sexe">sexe*:</label>
+            <input type="radio" name="couleur" value="feminin"> feminin
+            <input type="radio" name="couleur" value="masculin"> masculin
             <br>
-            <label for="date">date de naisssance*:</label><input type="date" name="ddn" id="date">
+
+            <label for="date">date de naisssance*:</label>
+            <input type="date" name="ddn" id="date">
             <br>
-            <label for="number">Code postale*:</label><input type="code postale">
+
+            <label id="number">Code postale*:</label>
+            <input type="number" name="postale">
             <br>
-            <label form="Adresse">Adresse:</label><input type="Adresse">
+            <label id="Adresse">Adresse:</label>
+            <input type="text" name="text" id="adresse">
             <br>
-            <label name="ville">ville:</label><input type="ville">
+            <label for="adresse">ville:</label>
+            <input type="text" name="text" id="ville">
             <br>
-            <label name="email">Email*:</label><input type="email">
+            <label id="email">Email*:</label>
+            <input type="email">
             <br>
         </fieldset>
         <fieldset>
@@ -61,7 +72,8 @@
             <label id="suje">sujet*:</label>
             <select id="sujet">
                 <option value="select">veuillez séléctionner un sujet
-                </option><br>
+                </option>
+                
             </select> <br>
             <label>Votre question*:</label>
             <textarea  name="votrequestion"></textarea>
